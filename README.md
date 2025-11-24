@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🍯 Mel & Magia - App de Delivery
 
-# Run and deploy your AI Studio app
+Aplicativo de delivery e gestão para confeitaria artesanal de Pão de Mel. O sistema possui três visões integradas:
+1. **Cliente:** Cardápio digital, carrinho, checkout e IA recomendadora (Chef Mel).
+2. **Gestor:** Dashboard financeiro, kanban de pedidos e edição de cardápio em tempo real.
+3. **Entregador:** Gestão de rotas e confirmação de entrega.
 
-This contains everything you need to run your app locally.
+## 🚀 Tecnologias
 
-View your app in AI Studio: https://ai.studio/apps/drive/1BfgATlrpQM8SntvB0j2ulDQyoePswfoM
+- React 18 + Vite
+- Tailwind CSS
+- Lucide Icons
+- Supabase (Banco de Dados em Tempo Real)
+- Google Gemini AI (Recomendações inteligentes)
 
-## Run Locally
+## 🛠️ Como rodar localmente
 
-**Prerequisites:**  Node.js
+1. Clone o repositório
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Crie um arquivo `.env` na raiz com suas chaves (veja `.env.example`).
+4. Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
 
+## 📦 Como fazer Deploy no GitHub Pages
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Este projeto está configurado para deploy automático via script.
+
+1. Garanta que o `homepage` no `package.json` corresponde ao seu repositório.
+2. Rode o comando:
+   ```bash
+   npm run deploy
+   ```
+3. O site estará disponível em `https://seu-usuario.github.io/seu-repositorio/`.
+
+## 🗄️ Banco de Dados (Supabase)
+
+Para configurar o banco de dados, execute os comandos do arquivo `db_schema.sql` no SQL Editor do seu projeto Supabase.
