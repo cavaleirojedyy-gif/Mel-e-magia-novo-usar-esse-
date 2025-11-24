@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, (process as any).cwd(), '');
   
   return {
+    base: './', // Define caminhos relativos para funcionar no GitHub Pages
     plugins: [react()],
     define: {
       // Polifill para que process.env.API_KEY funcione no navegador
